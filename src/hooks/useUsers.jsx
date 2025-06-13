@@ -8,13 +8,14 @@ export function useUsers() {
         try {
             const data = await getAllUsers();
             setUsers(data)
+            console.log(data)
         } catch(e) {
             console.error('Error inesperado', e)
         } 
     }
 
     useEffect(()=>{
-        fetchUsers;
+        fetchUsers();
     }, [])
 
     return { 

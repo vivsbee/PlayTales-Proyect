@@ -6,6 +6,7 @@ import { Catalogue } from './pages/Catalogue.jsx';
 import { Register } from './pages/Register.jsx';
 import { NavBar } from './components/NavBar.jsx';
 import { Footer } from './components/Footer.jsx';
+import { GameDetails } from './pages/GameDetails.jsx';
 // import { UserProvider } from './context/UserContext.jsx';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/catalogue" element={<Catalogue/>} />
+          <Route path="/gamedetails" element={<GameDetails/>} />
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
