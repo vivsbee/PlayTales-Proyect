@@ -10,5 +10,5 @@ export async function getAllUsers() {
         return response.data
     } catch (error) {
         console.log('Ups, no se pudo mostrar la info :c', error)
-    } 
+    }
 } 

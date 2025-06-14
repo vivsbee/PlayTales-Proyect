@@ -6,30 +6,32 @@ import { Catalogue } from './pages/Catalogue.jsx';
 import { Register } from './pages/Register.jsx';
 import { NavBar } from './components/NavBar.jsx';
 import { Footer } from './components/Footer.jsx';
-import { GameDetails } from './pages/GameDetails.jsx';
-// import { UserProvider } from './context/UserContext.jsx';
+// import { GameDetails } from './pages/GameDetails.jsx';
+import { UserProvider } from './context/UserContext.jsx';
 
 function App() {
 
 
   return (
     <>
-      <div>
-        <header>
-          <NavBar/>
-        </header>
-        
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/catalogue" element={<Catalogue/>} />
-          <Route path="/gamedetails" element={<GameDetails/>} />
-          <Route path="/dashboard" element={<Dashboard/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
-        </Routes>
+      <UserProvider>
+        <div className='bg-deepwave min-h-screen'>
+          <header>
+            <NavBar />
+          </header>
 
-        <Footer/>
-    </div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalogue" element={<Catalogue />} />
+            {/*<Route path="/gamedetails/:id" element={<GameDetails/>} />*/}
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+
+          <Footer />
+        </div>
+      </UserProvider>
     </>
   )
 }

@@ -2,6 +2,6 @@ import React from 'react'
 
 export function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div className='text-voidlight'>Dashboard</div>
   )
 }
