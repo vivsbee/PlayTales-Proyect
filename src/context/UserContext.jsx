@@ -1,5 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useUsers } from "../hooks/useUsers.jsx";
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const UserContext = createContext();
 
@@ -30,6 +32,14 @@ export const UserProvider = ({ children }) => {
     function logout() {
         localStorage.removeItem('userLogged');
         setUser(null)
+        Swal.fire({
+            icon: "success",
+            title: "Goodbye, gamer! 🎮",
+            text: "Your session has ended.",
+            confirmButtonText: "Ok"
+        }).then(() => {
+           navigate("/");
+        });
     }
 
     useEffect(() => {
@@ -37,6 +47,7 @@ export const UserProvider = ({ children }) => {
         setUser(stored);
     }, []
     );
+    
 
     return (
         <UserContext.Provider value={{ user, login, logout }}>
