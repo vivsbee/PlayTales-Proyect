@@ -465,23 +465,23 @@ export const games = [
     },
     {
         id: 12,
-        name: "Life is Strange: Complete Season",
-        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/319630/header.jpg",
-        description: "A narrative adventure where your choices shape the story. Follow Max, a teenager who discovers she can rewind time.",
-        releaseDate: "2015-10-20",
-        developer: "DONTNOD Entertainment",
-        genres: ["StoryRich  ", "Emotional  ", "Adventure"],
-        platforms: ["PC", "PS4", "Xbox One", "Mobile"],
-        averageRating: 4.8,
+        name: "The Sims 4",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg",
+        description: "Create unique Sims, build their homes, and control their lives. From daily routines to big life moments, shape the story as you go.",
+        releaseDate: "2014-09-02",
+        developer: "Maxis",
+        genres: ["LifeSim  ", "Sandbox  ", "Building  "],
+        platforms: ["PC", "Mac", "PS4", "Xbox One"],
+        averageRating: 4.4,
         reviews: [
-            { user: "TimeRewinder", comment: "It emotionally destroyed me, thanks", rating: 5 },
-            { user: "IndieFeels", comment: "A masterpiece in storytelling", rating: 4.7 }
+            { user: "BuilderVibes", comment: "Spooky how much time I’ve spent here", rating: 4.5 },
+            { user: "LifeDramaFan", comment: "Addictive, chaotic, and fun", rating: 4.3 }
         ],
-        tags: ["emotional", "choices matter", "episodic"],
-        trailerURL: "https://www.youtube.com/watch?v=AURVxvIZrmU",
-        estimatedDuration: "10-15 hours",
+        tags: ["simulation", "customization", "sandbox"],
+        trailerURL: "https://www.youtube.com/watch?v=YYTkkq8UycY",
+        estimatedDuration: "Endless (sandbox)",
         gameModes: ["Singleplayer"],
-        availableLanguages: ["English", "Spanish", "French"]
+        availableLanguages: ["English", "Spanish", "German", "French"]
     },
     {
         id: 14,
@@ -565,23 +565,23 @@ export const games = [
     },
     {
         id: 18,
-        name: "The Sims 4",
-        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg",
-        description: "Create unique Sims, build their homes, and control their lives. From daily routines to big life moments, shape the story as you go.",
-        releaseDate: "2014-09-02",
-        developer: "Maxis",
-        genres: ["LifeSim  ", "Sandbox  ", "Building  "],
-        platforms: ["PC", "Mac", "PS4", "Xbox One"],
-        averageRating: 4.4,
+        name: "Life is Strange: Complete Season",
+        image: "https://cdn.cloudflare.steamstatic.com/steam/apps/319630/header.jpg",
+        description: "A narrative adventure where your choices shape the story. Follow Max, a teenager who discovers she can rewind time.",
+        releaseDate: "2015-10-20",
+        developer: "DONTNOD Entertainment",
+        genres: ["StoryRich  ", "Emotional  ", "Adventure"],
+        platforms: ["PC", "PS4", "Xbox One", "Mobile"],
+        averageRating: 4.8,
         reviews: [
-            { user: "BuilderVibes", comment: "Spooky how much time I’ve spent here", rating: 4.5 },
-            { user: "LifeDramaFan", comment: "Addictive, chaotic, and fun", rating: 4.3 }
+            { user: "TimeRewinder", comment: "It emotionally destroyed me, thanks", rating: 5 },
+            { user: "IndieFeels", comment: "A masterpiece in storytelling", rating: 4.7 }
         ],
-        tags: ["simulation", "customization", "sandbox"],
-        trailerURL: "https://www.youtube.com/watch?v=YYTkkq8UycY",
-        estimatedDuration: "Endless (sandbox)",
+        tags: ["emotional", "choices matter", "episodic"],
+        trailerURL: "https://www.youtube.com/watch?v=AURVxvIZrmU",
+        estimatedDuration: "10-15 hours",
         gameModes: ["Singleplayer"],
-        availableLanguages: ["English", "Spanish", "German", "French"]
+        availableLanguages: ["English", "Spanish", "French"]
     },
     {
         id: 19,

@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
+import { GameCarousel } from '../components/GameCarousel';
 
 export function Home() {
 
   return (
-    <>
-      <div className='text-voidlight'>HeroSection titulo + texto + imagen + boton</div>
-      <div className='text-voidlight'>Features</div>
-      <div className='text-voidlight'>Gallery</div>
-      <div className='text-voidlight'>Stats or Logos</div>
-    </>
-  )
+    <div className="py-10 px-6">
+      <GameCarousel />
+
+
+
+
+    </div>
+  );
 }
