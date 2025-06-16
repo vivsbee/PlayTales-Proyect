@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { games } from '../utils/mockGames.js';
 
 export function useGames() {

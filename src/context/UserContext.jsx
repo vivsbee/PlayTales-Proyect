@@ -8,7 +8,7 @@ export const UserProvider = ({ children }) => {
     const { users } = useUsers();
     const [user, setUser] = useState(null);
 
-    function login({ userNameExt, passwordExt }) {
+    function login({ emailExt, passwordExt }) {
         console.log("Users disponibles:", users);
 
         if (!users || users.length === 0) {
@@ -16,7 +16,7 @@ export const UserProvider = ({ children }) => {
             return false;
         }
 
-        const userFound = users.find((user) => user.username === userNameExt && user.password === passwordExt);
+        const userFound = users.find((user) => user.email === emailExt && user.password === passwordExt);
 
         if (userFound) {
             localStorage.setItem('userLogged', JSON.stringify(userFound));
@@ -30,6 +30,8 @@ export const UserProvider = ({ children }) => {
     function logout() {
         localStorage.removeItem('userLogged');
         setUser(null)
+
+        // show({ title: "Welcome " + firstname, type: "success", text: "Welcome back, gamer! 🎮" });
 
         alert('Cierre de sesion existoso') //por defecto js
     }
