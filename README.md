@@ -1,12 +1,69 @@
-# React + Vite
+# 🎮 PlayTales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web creada con React orientada a amantes de los videojuegos. Permite navegar por un catálogo de juegos, ver detalles, iniciar sesión y más. Diseñado como proyecto final del curso de desarrollo Front-End.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **React**
+- **TailwindCSS**
+- **Ant Design (AntD)**
+- **React Router DOM**
+- **React Hook Form**
+- **Iconify**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📄 Páginas principales
+
+### 🏠 Home
+- Carrusel de juegos destacados
+- Sección de reseñas destacadas
+- Juegos populares aleatorios
+
+### 🕹️ Catalogue
+- Tarjetas de juegos renderizadas desde un mock
+- Diseño responsive y atractivo
+
+### 📝 Login
+- Inicio de sesión con email y contraseña
+- Alertas personalizadas con `sweetalert2`
+- Protección de rutas (acceso a dashboard restringido si no estás logueado)
+
+### 🧾 Register
+- Registro de nuevos usuarios
+- Validación de campos con React Hook Form
+- Diseño similar al login para mantener consistencia
+
+### 🕵️‍♀️ GameDetails
+- Página individual para cada juego
+- Información detallada
+- Reseñas estilo Steam
+- Navegación intuitiva con `react-router-dom`
+
+---
+
+## 🧠 Funcionalidades destacadas
+
+- Autenticación simulada con `localStorage`
+- Protección de rutas para usuarios no logueados
+- Estado global del usuario con `UserContext`
+- Mock de juegos personalizados (incluye Roblox, Stardew Valley, Poppy Playtime, etc.)
+- Reseñas y juegos populares aleatorios
+- Uso de SVGs decorativos personalizados (ShapeDivider / Haikei)
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/playtales.git
+
+# Autor(es)
+
+Realizado por: Lina V. Garnica Gómez 2025
+
+
+<p>Si le gustó el contenido del repositorio, ¡apóyanos dando una ⭐ al proyecto!</p>
