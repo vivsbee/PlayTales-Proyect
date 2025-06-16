@@ -30,10 +30,6 @@ export const UserProvider = ({ children }) => {
     function logout() {
         localStorage.removeItem('userLogged');
         setUser(null)
-
-        // show({ title: "Welcome " + firstname, type: "success", text: "Welcome back, gamer! 🎮" });
-
-        alert('Cierre de sesion existoso') //por defecto js
     }
 
     useEffect(() => {

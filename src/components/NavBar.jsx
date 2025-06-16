@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { useAuth } from '../context/UserContext.jsx';
+import { useAlert } from '../hooks/useAlert.jsx';
 
 export function NavBar() {
 
   const [isLogged, setIsLogged] = useState(false);
   const context = useAuth();
+  const navigate = useNavigate();
+  const { show } = useAlert
 
   useEffect(() => {
     const local = localStorage.getItem("userLogged");
@@ -16,37 +19,34 @@ export function NavBar() {
       setIsLogged(false)
     }
   }, [])
-  // [context.users]
+
+  const handleLogout = () => {
+    context.logout();
+    show({ title: "Success", type: "success", text: "Goob bye, gamer! 🎮" });
+    navigate('/');
+  };
   return (
-    <> 
-      <nav className='bg-twilightcore text-voidlight font-tipographyTexto flex w-full h-[80px] px-8 justify-between items-center'>
+    <>
+      <nav className='bg-twilightcore text-voidlight font-tipographyTexto flex w-full h-[80px] px-8 items-center'>
         <Link to='/'>
-          {/* <div>PT</div> */}
-          <Icon icon="octicon:mark-github-16" width={30} height={30} />
+          <Icon icon="ion:game-controller" width={30} height={30} className='left-0' />
         </Link>
-        <div className='flex gap-20 text-right'>
+
+        <div className='justify-end flex items-center gap-8 ml-auto'>
           <NavLink to='/' className={({ isActive }) => isActive ? "font-bold underline" : ""}>Home</NavLink>
           <NavLink to='/catalogue' className={({ isActive }) => isActive ? "font-bold underline" : ""}>Catalogue</NavLink>
-          
           {isLogged ? (
-
-            <div>
-              <NavLink to='/dashboard' className={({ isActive }) => isActive ? "font-bold underline" : ""}>Your Profile</NavLink>
-            </div>,
-            
-            <button onClick={context.logout}>Sign out</button>
-
+            <>
+              <button onClick={handleLogout}>Sign out</button>
+            </>
           ) : (
-            <div className='flex gap-20'>
-
+            <>
               <NavLink to='/register' className={({ isActive }) => isActive ? "font-bold underline" : ""}>Register</NavLink>
               <NavLink to='/login' className={({ isActive }) => isActive ? "font-bold underline" : ""}>Login</NavLink>
-            </div>
+            </>
           )}
         </div>
-        <div></div>
       </nav>
     </>
-
   )
 }

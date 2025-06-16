@@ -7,14 +7,12 @@ import { GameStats } from '../components/GameStats.jsx';
 import { GameReviews } from '../components/GameReviews.jsx';
 import { Link } from 'react-router-dom';
 
-
 export function GameDetails() {
 
   const { id } = useParams();
   const game = games.find(g => g.id === parseInt(id));
   if (!game) return <p className="text-center text-white">Game not found</p>;
 
-  // const {games} = useGames();
   return (
     <div className="text-voidlight p-6 flex flex-col gap-8 max-w-6xl mx-auto">
       <GameHeader game={game} />
@@ -27,7 +25,7 @@ export function GameDetails() {
           </button>
         </Link>
       </div>
-      <GameReviews reviews={game.reviews} />
+      <GameReviews reviews={game.reviews}/>
     </div>
   )
 }

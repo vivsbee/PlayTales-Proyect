@@ -1,17 +1,19 @@
 import React from 'react'
+import { ReviewDetails } from './ReviewDetails.jsx';
 
 export function GameReviews({ reviews }) {
-  return (
-    <div>
-      <h2 className="text-2xl font-semibold mb-2 font-tipographyTextoTwo">User Reviews</h2>
-      <ul className="space-y-4 font-tipographyTexto">
-        {reviews.map((r, i) => (
-          <li key={i} className="border-l-4 border-ice pl-4">
-            <p className="font-semibold">{r.user} - ⭐ {r.rating}</p>
-            <p className="text-sm">{r.comment}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div className="mt-4 font-tipographyTexto">
+            <h2 className="text-2xl font-bold mb-4 font-tipographyTextoTwo">Reviews</h2>
+            {reviews.map((review, index) => (
+                <ReviewDetails
+                    key={index}
+                    user={review.user}
+                    comment={review.comment}
+                    rating={review.rating}
+                    recommended={review.rating >= 4}
+                />
+            ))}
+        </div>
+    );
 }

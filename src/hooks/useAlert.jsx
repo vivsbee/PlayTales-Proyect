@@ -3,16 +3,14 @@ import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 
 export function useAlert() {
-    
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const show = ({ type = "info", title = "Aviso", text = "Mensaje" }) => {
-        Swal.fire({ icon: type, title, text, confirmButtonText: "Ok" }).then((response) => {
-            if (response.isConfirmed) {
-                navigate("/dashboard")
-            }
-        });
-    };
+  const show = async ({ type = "info", title = "Aviso", text = "Mensaje", redirect = null }) => {
+    const response = await Swal.fire({ icon: type, title, text, confirmButtonText: "Ok" });
+    if (response.isConfirmed && redirect) {
+      navigate(redirect);
+    }
+  };
 
-    return { show };
+  return { show };
 }

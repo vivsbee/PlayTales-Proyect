@@ -13,7 +13,6 @@ export default {
         echobyte: '#6858D5',
         bottondark: '#7F337D',
         bottonlight: '#8D41D9',
-        // mistlayerlight:'#9C91CC',
         mistlayerlight:'#AA9AD9',
         voidlight: '#FCFDFF',
 
