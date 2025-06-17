@@ -1,17 +1,45 @@
 # 🎮 PlayTales
 
-Una aplicación web creada con React orientada a amantes de los videojuegos. Permite navegar por un catálogo de juegos, ver detalles, iniciar sesión y más. Diseñado como proyecto final del curso de desarrollo Front-End.
+Una aplicación web creada con React orientada a amantes de los videojuegos. Permite navegar por un catálogo de juegos, ver detalles, iniciar sesión y más. Diseñado como proyecto final del curso de React_Front-End.
 
 ---
 
 ## ✨ Tecnologías Utilizadas
 
-- **React**
-- **TailwindCSS**
-- **Ant Design (AntD)**
-- **React Router DOM**
-- **React Hook Form**
-- **Iconify**
+- **React** + Vite
+- **React Router DOM** – Ruteo de las páginas
+- **Tailwind CSS** – Estilos personalizados y responsivos
+- **Ant Design (antd)** – Componentes UI como formularios, carrusel y layout
+- **React Hook Form** – Manejo de formularios
+- **Iconify** – Íconos decorativos
+
+---
+
+## 📄 Páginas del proyecto
+
+- `/` → Página de **Inicio** (Home)
+- `/catalogue` → Catálogo con tarjetas de juegos
+- `/login` → Formulario de inicio de sesión
+- `/register` → Formulario de registro
+- `/gamedetails/:id` → Página de detalle individual de cada juego
+
+---
+
+## 🖌️ Wireframes / Bocetos
+
+### 🏠 Home
+![Boceto Home](./src/assets/boceto-inicio.png)
+
+### 🔐 Login and Register
+![Boceto Login](./src/assets/boceto-registerlogin.png)
+
+### 🗂️ Catalogue
+![Boceto Catalogue](./src/assets/boceto-catalogoinicial.png)
+![Boceto Catalogue](./src/assets/boceto-catalogofinal.png)
+### 🎮 Game Details
+![Boceto Game Details](./src/assets/boceto-detallesjuegos.png)
+
+> Estos bocetos ayudaron a definir la estructura visual y disposición de cada página antes del desarrollo final.
 
 ---
 
@@ -29,7 +57,7 @@ Una aplicación web creada con React orientada a amantes de los videojuegos. Per
 ### 📝 Login
 - Inicio de sesión con email y contraseña
 - Alertas personalizadas con `sweetalert2`
-- Protección de rutas (acceso a dashboard restringido si no estás logueado)
+- En un futuro: Protección de rutas (acceso a dashboard restringido si no estás logueado)
 
 ### 🧾 Register
 - Registro de nuevos usuarios
@@ -46,14 +74,13 @@ Una aplicación web creada con React orientada a amantes de los videojuegos. Per
 
 ## 🧠 Funcionalidades destacadas
 
-- Autenticación simulada con `localStorage`
-- Protección de rutas para usuarios no logueados
-- Estado global del usuario con `UserContext`
-- Mock de juegos personalizados (incluye Roblox, Stardew Valley, Poppy Playtime, etc.)
-- Reseñas y juegos populares aleatorios
-- Uso de SVGs decorativos personalizados (ShapeDivider / Haikei)
+- ⚡ Mock de juegos con datos como imágenes, reseñas, géneros, duración, etc.
+- 👤 Inicio de sesión y registro funcionales con validaciones
+- 🔐 Estado global del usuario con `UserContext`
+- 🧩 Carrusel personalizado en Home
+- 💬 Reseñas destacadas y aleatorias en la página principal
+- 🌌 Estética visual basada en temas oscuros con sombras neón y SVG decorativos
 
----
 
 ## 🚀 Cómo ejecutar el proyecto
 
@@ -61,9 +88,12 @@ Una aplicación web creada con React orientada a amantes de los videojuegos. Per
    ```bash
    git clone https://github.com/tuusuario/playtales.git
 
-# Autor(es)
 
-Realizado por: Lina V. Garnica Gómez 2025
+
+## ✨ Autor
+
+**Lina Garnica** – Desarrolladora Frontend y futura creadora de videojuegos 🚀🎮  
+[GitHub](https://github.com/vivsbee)
 
 
 <p>Si le gustó el contenido del repositorio, ¡apóyanos dando una ⭐ al proyecto!</p>
