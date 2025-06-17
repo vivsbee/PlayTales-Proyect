@@ -28,16 +28,16 @@ Una aplicación web creada con React orientada a amantes de los videojuegos. Per
 ## 🖌️ Wireframes / Bocetos
 
 ### 🏠 Home
-![Boceto Home](./src/assets/boceto-inicio.png)
+![Boceto Home](./src/assets/boceto-inicio.PNG)
 
 ### 🔐 Login and Register
-![Boceto Login](./src/assets/boceto-registerlogin.png)
+![Boceto Login](./src/assets/boceto-registerlogin.PNG)
 
 ### 🗂️ Catalogue
-![Boceto Catalogue](./src/assets/boceto-catalogoinicial.png)
-![Boceto Catalogue](./src/assets/boceto-catalogofinal.png)
+![Boceto Catalogue](./src/assets/boceto-catalogoinicial.PNG)
+![Boceto Catalogue](./src/assets/boceto-catalogofinal.PNG)
 ### 🎮 Game Details
-![Boceto Game Details](./src/assets/boceto-detallesjuegos.png)
+![Boceto Game Details](./src/assets/boceto-detallesjuegos.PNG)
 
 > Estos bocetos ayudaron a definir la estructura visual y disposición de cada página antes del desarrollo final.
 
