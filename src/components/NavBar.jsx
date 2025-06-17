@@ -11,15 +11,6 @@ export function NavBar() {
   const navigate = useNavigate();
   const { show } = useAlert
 
-  // useEffect(() => {
-  //   const local = localStorage.getItem("userLogged");
-  //   if (local) {
-  //     setIsLogged(true)
-  //   } else {
-  //     setIsLogged(false)
-  //   }
-  // }, [])
-
   useEffect(() => {
     const local = localStorage.getItem("userLogged");
     setIsLogged(!!local);
